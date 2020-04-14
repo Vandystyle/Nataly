@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav{
+    
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(0deg, white, rgb(110, 110, 247));
+   
+}
+.icon{
+    width: 10%;
+    height: inherit;
+      
+}
+.links{
+    width: 80%;
+    height: inherit;
+
+}
+.media-links{
+    width: 10%;
+    height: inherit;
+    
+}
+
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+.menu-list li{
+    padding: 1%;
+    position: relative;
+    font-size: 300%;
+    font-family: caveat ;
+    font-weight: bolder;
+    color: rgb(109, 109, 109);
+    margin: 1%;
+    transition: .6s;
+}
+.flinks li, .fmedia li{
+    transition: .6s;
+    
+}
+.menu-list li:hover, .flinks li:hover, .fmedia li:hover{
+    transform: scale(1.1);
+    
+}
+a{
+    text-decoration: none;
+    
+}
+.icon img, .media-links img{
+    position: relative;
+    left: 25%;
+    top: 15%;
+    height: 70%;
+}
+
+
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    font-family: caveat;
+    font-size: 200%;
+    color: rgb(80, 80, 10);
+}
+.text1{
+    width: 45%;
+    height: auto;
+
+}
+.pic1{
+    width: 45%;
+    height: auto;
+}
+.pic1 img{
+    width: 100%;
+}
+.section-oposite{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    font-family: caveat;
+    font-size: 200%;
+    color: rgb(80, 80, 10);
+}
+.text1-oposite{
+    width: 45%;
+    height: auto;
+    order: 2;
+
+}
+.pic1-oposite{
+    width: 45%;
+    height: auto;
+    order: 1;
+}
+.pic1-oposite img{
+    width: 100%;
+}
+
+.text-center{
+    width: 80%;
+    margin: auto;
+    padding-top: 15%;
+    font-family: caveat;
+    font-size: 200%;
+    color: rgb(80, 80, 10)
+}
+
+.pic-center{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+}
+.pic-center img{
+    width: 40vh;
+}
+.video1{
+    width: 80%;
+}
+video{
+    width: 60%;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    font-family: caveat;
+    font-size: 200%;
+    color: rgb(80, 80, 10);
+    background-image: linear-gradient(180deg, white, rgb(110, 110, 247));
+    
+}
+a:link, a:visited {
+    color: rgb(90, 64, 133);
+}
+.flinks li, .fmedia li{
+    list-style-type: none;
+}
+.fmedia ul{
+    display: flex;
+}
+.fmedia li{
+    margin: 2vh;
+    
+}
+  hr{
+      margin-top: 5%;
+  }  
+  h2, .main-about{
+      width: 80%;
+      margin: auto;
+      text-align:center ;
+      font-family: caveat;
+    font-size: 200%;
+    color: rgb(80, 80, 10);
+  }
+.media-galery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.media-galery img{
+    width: 30%;
+    margin: 1vh;
+    transition: .5s;
+    box-shadow: 0px 0px 150px #000000;
+}
+.media-galery img:hover{
+    transform: scale(1.3);
+}
+.main-about{
+    height: 70vh;
+}
+
+
+@media screen and (max-width: 375px){
+    .nav{
+        height: 2em;
+    }
+    .menu-list li{
+        font-size: 150%;
+    }
+    section, .section-oposite, .text-center, .main-about, h2, .media-galery{
+        margin-top: 2%;
+        font-size: 100%;
+        flex-flow: column;
+    }
+    .text1, .text1-oposite{
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        
+    
+    }
+    .pic1, .pic1-oposite, .main-about{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+    }
+    .pic-center img{
+        margin: 5%;
+    }
+    video{
+        width: 100%;
+    }
+    footer{
+        flex-flow: column;
+        height: auto;
+    }
+    .main-about{
+        height: 60vh;
+    }
+    .media-galery img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .pic-center img{
+        width: 30%;
+    }
+    .main-about{
+        height: 60vh;
+    }
+
+}
+@media screen and (max-width: 768px){
+    
+}
